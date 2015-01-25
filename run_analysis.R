@@ -8,7 +8,7 @@ dattest = read.table(file = "./test/X_test.txt")
 #concatenating them into one table
 dat = rbind(dattest,dattrain)
 
-#makinng column names as feature name
+#making column names as feature name
 features<- read.table("features.txt")
 listofNames <-as.character(features[,2])
 listofNames<-make.names(listofNames, unique=TRUE)
